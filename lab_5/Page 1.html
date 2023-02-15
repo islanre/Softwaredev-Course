@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to about page</title>
+    <link rel="stylesheet" href="CSS/unsemantic-grid-responsive-tablet.css">
+    
+    <script type="text/javascript">       
+    function validate(form) 
+    {fail = validateUsername(form.username.value);
+    fail += validatePassword(form.password.value);    
+    fail += validateEmail(form.email.value);       
+    if (fail == "")   return true;  
+    else {alert(fail);              
+    return false;}     
+}
+         function validateUsername(field) 
+         {if (field == "") return "No Username was entered.\n";        
+          else if (field.length < 5)         
+          return "Usernames must be at least 5 characters.\n";
+                return ""}      
+                function validatePassword(field) 
+                {if (field == "") return "No Password was entered.\n";
+                            else if (field.length < 6)             
+                            return "Passwords must be at least 6 characters.\n";
+                                       return ""}    function validateEmail(field) 
+                                       {   if (field == "") return "No Email was entered.\n";        
+                                       else if (!((field.indexOf(".") > 0) && (field.indexOf("@") > 0)) || /[^a-zA-Z0-9.@_-]/.test(field))               
+                                       return "The Email address is invalid.\n";            
+                                       return ""       }  
+    </script>
+</head>
+<body>
+    <div class="grid-container">
+        <H2>
+            Welcome to Your Task manager Application
+        </H2>
+        <p>
+            Here you would get a planner for all your task and plan ahead of time
+        </p>
+    </div>
+
+    <br>
+
+    <form method="get" action="form_javascript.html" onsubmit="return validate(this)">
+        UserName <input type="text" maxlength="5" name="UserName" required>
+        <br>
+        Password <input type="text" maxlength="3" name="Password" required>
+        <br>
+        <input type="button" value="Submit">
+        <br>
+        <input type="button" value="Reset Password">
+    </form>
+
+   
+
+
+    
+</body>
+</html>
