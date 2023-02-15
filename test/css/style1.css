@@ -1,0 +1,39 @@
+
+
+#beginh
+{
+    color: green;
+}
+#firstp
+{
+    color: red;
+    font-size: 26px;
+    font-weight: bolder;
+}
+.warning
+{
+    color: blue;
+    font-size: 19px;
+    }
+
+h1 + h2 {
+   color: green;
+ }
+        p {
+        color: red;
+        }
+div>h1
+{
+    color: black;
+}
+
+section.news h1 {
+    color: yellow;
+    }
+a:hover
+{
+    color: chartreuse;
+}
+A:VISITED {
+    COLOR: #00FF00;
+   }
