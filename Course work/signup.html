@@ -4,23 +4,24 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/w3.css">
-    <title>Account Creation page</title>
+    <title>
+      Registration
+    </title>
 </head>
-<body class ="w3-red">
+<body>
   <header>
-    <h1 class="w3-container w3-cursive w3-center">
-        Sign up For your Account
-    </h1>
+    <H1 Class= "w3-center "> TODO TASK LIST</H1>
   </header >
-  <main>
-    <div class="w3-container w3-center">
-    <H2>Welcome to the sign up page</H2>
-    <p> Fill the form to get access into the TODO List Application</p>
-  </div>
-     <form class="w3-container:after centermagin">
-        <div class="w3-container w3-margin-top w3-green">
-      
+  <main >
+    <h1 class="w3-blue w3-cursive w3-center">
+      Registration
+  </h1>
+  <!---Form page begins --->
+    <div>
+     <form class="w3-center ">
+        <div class="regfont">
         <label for="FName">FirstName</label> <br> <input type="text" maxlength="20" name="UserName" required> 
         <br>
         <label for="lName">lastName</label> <br><input type="text" maxlength="20" name="UserName" required>
@@ -33,30 +34,30 @@
         <br>
           <label for="Role">Account Type</label>
           <br>
+           <!---script to add to the account type to direct registration details to different DB for Admin and user --->
           <select>
               <option value="">Select Account type</option>
               <option value="1">Admin</option>
               <option value="2">User</option>
         </select>
         <br>
+         <!---Script to be added for password reset --->
           <label for="password">Password</label><br><input type="text" maxlength="20" name="Password" required>
         <br>
         <label for="cpassword">Confirm Password</label> <br><input type="text" maxlength="20" name="Password" required>
-        <br>
-      <br>
-      <div>
+        <br>  
+      </div>
+        <!---Script to be added for the Action of submit and reset --->
         <input type="button" value="Submit" onclick="alert('Account has been succssfully created')">
         <input type="button" value="Reset Password">
-      </div>
-      </div>
     </form>
 
+     
   </main>
-   
+
   <footer>
     <P> Copyright Law Group I</P>
-
   </footer>
-
 </body>
+
 </html>
