@@ -1,3 +1,13 @@
+main
+{
+    border: 100px;
+    border-width: 200px;
+}
+.container
+{
+    border-left: 500px;
+    border-right: 500px;
+}
 div
 {
     background-color: cornsilk;
@@ -11,10 +21,19 @@ div
     text-align: center;
     border-left: 30px;
 }
+
 h1
 {
 font-family: 'Times New Roman', Times, serif;
 font-size: 16px;
 position: 
+}
+
+.centermagin
+{
+margin: 400px;
+margin-left: 200px;
+margin-right: 200px;
+border-color: black;
 }
 

@@ -4,21 +4,23 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/w3.css">
     <title>Account Creation page</title>
 </head>
-<body>
+<body class ="w3-red">
   <header>
-    <h1>
+    <h1 class="w3-container w3-cursive w3-center">
         Sign up For your Account
     </h1>
-  </header>
+  </header >
   <main>
+    <div class="w3-container w3-center">
     <H2>Welcome to the sign up page</H2>
     <p> Fill the form to get access into the TODO List Application</p>
- <div class="bform">
-    <form class="grid">
-        
+  </div>
+     <form class="w3-container:after centermagin">
+        <div class="w3-container w3-margin-top w3-green">
+      
         <label for="FName">FirstName</label> <br> <input type="text" maxlength="20" name="UserName" required> 
         <br>
         <label for="lName">lastName</label> <br><input type="text" maxlength="20" name="UserName" required>
@@ -29,16 +31,25 @@
         <br>
         <label for="pnumber">Phone Number </label><br><input type="number" name="phonenos" required>
         <br>
-        <label for="password">Password</label><br><input type="text" maxlength="20" name="Password" required>
+          <label for="Role">Account Type</label>
+          <br>
+          <select>
+              <option value="">Select Account type</option>
+              <option value="1">Admin</option>
+              <option value="2">User</option>
+        </select>
+        <br>
+          <label for="password">Password</label><br><input type="text" maxlength="20" name="Password" required>
         <br>
         <label for="cpassword">Confirm Password</label> <br><input type="text" maxlength="20" name="Password" required>
         <br>
+      <br>
+      <div>
         <input type="button" value="Submit" onclick="alert('Account has been succssfully created')">
-        
         <input type="button" value="Reset Password">
+      </div>
+      </div>
     </form>
-
-    </div>
 
   </main>
    
